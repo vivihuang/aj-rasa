@@ -1,0 +1,59 @@
+intents:
+- greet
+- goodbye
+- mood_affirm
+- mood_deny
+- mood_great
+- mood_unhappy
+- ask_weather
+- ask_howdoing
+- ask_howold
+- ask_restaurant
+- ask_time
+templates:
+  utter_greet:
+  - text: Hey! How are you?
+    buttons:
+    - title: great
+      payload: great
+    - title: super sad
+      payload: super sad
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://cdn77.eatliver.com/wp-content/uploads/2017/10/trump-frog.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_ask_weather:
+  - text: I don't know about where you live, but in my world it's always sunny ☀️
+  - text: Honestly it's a bit too hot these days 😅
+  - text: Blue skies and sunshine!
+  - text: Let's just say it hasn't rained in weeks ☀️
+  utter_ask_howdoing:
+  - text: I'm great! Thanks for asking.
+  - text: I'm good, thanks!
+  - text: A little bit too warm, otherwise fine.
+  utter_ask_howold:
+  - text: '42.'
+  - text: Old enough to be a bot.
+  - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t
+      matter.
+  utter_ask_restaurant:
+  - text: I'm sorry, I can’t recommend you a restaurant as I usually cook at home.
+  utter_ask_time:
+  - text: It's the most wonderful time of the year!
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_ask_weather
+- utter_ask_howdoing
+- utter_ask_howold
+- utter_ask_restaurant
+- utter_ask_time
+- action_chitchat
