@@ -1,0 +1,7 @@
+md5: 98d85e110904478226d5014eb1f39e81
+outs:
+- md5: e56c2550549439e544fdff2764d1ba30
+  path: 20191105-183419.tar.gz
+  cache: true
+  metric: false
+  persist: false
