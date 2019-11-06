@@ -18,10 +18,7 @@ use `source venv/bin/activate` to enable venv
 ### Train models
 `make train`
 
-### Run actions if there are any custom actions
-`make run-actions`
-
-### Run rasa
+### Run rasa api
 `make run`
 
 For debug mode, use `make run-debug`
