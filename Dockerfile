@@ -34,4 +34,4 @@ COPY . /app
 EXPOSE 5005
 
 ENTRYPOINT ["rasa"]
-CMD ["run", "--enable-api", "--endpoints", "endpoints.yml"]
+CMD ["run", "--enable-api", "--endpoints", "endpoints-prod.yml"]
