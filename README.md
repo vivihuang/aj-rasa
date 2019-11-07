@@ -15,6 +15,20 @@ use `source venv/bin/activate` to enable venv
 ### Install dependencies
 `pip install -r requirements.txt`
 
+### Create database and user in mongodb
+
+#### Install mongodb
+[Install instruction](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
+
+#### Create a db with name as **rasa**
+`use rasa`
+
+#### Create a user for rasa db
+`db.createUser({user: "rasauser", pwd: "rasapwd", roles: [ { role: "readWrite", db: "rasa" } ]})`
+
+#### Check db exists
+`mongo -u rasauser -p rasapwd --authenticationDatabase rasa`
+
 ### Train models
 `make train`
 

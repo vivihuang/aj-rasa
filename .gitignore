@@ -79,9 +79,6 @@ celerybeat-schedule
 # SageMath parsed files
 *.sage.py
 
-# dotenv
-.env
-
 # virtualenv
 .venv
 venv/
@@ -124,3 +121,5 @@ travis_gcloud_auth.json
 # IDE configs
 .idea
 *.iml
+
+rasa-db

@@ -1,21 +1,40 @@
 version: '3'
 services:
   rasa:
-    image: aj-estonia
+    image: 'aj-estonia:latest'
     container_name: rasa-server
-    networks: ["rasa-network"]
+    networks:
+      - rasa-network
     restart: always
+    depends_on:
+      - mongo
     ports:
-      - "5005:5005"
+      - '5005:5005'
     volumes:
       - ./models/:/app/models
   actions:
-    image: aj-lithuania
+    image: 'aj-lithuania:latest'
     container_name: rasa-actions-server
-    networks: ["rasa-network"]
+    networks:
+      - rasa-network
     restart: always
     ports:
-      - "5055:5055"
+      - '5055:5055'
+  mongo:
+    image: 'mongo:latest'
+    container_name: rasa-mongo
+    restart: always
+    networks:
+      - rasa-network
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - ./rasa-db:/data/db
+    ports:
+      - '27017:27017'
+    env_file:
+      - .env
 
 networks:
   rasa-network: {}
+volumes:
+  rasa-db: null
