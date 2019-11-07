@@ -3,22 +3,19 @@ services:
   rasa:
     image: aj-estonia
     container_name: rasa-server
-    depends_on:
-      - rasa-actions
+    networks: ["rasa-network"]
+    restart: always
     ports:
       - "5005:5005"
-    networks:
-      - "net1"
-    links:
-      - rasa-actions:rasa-actions
-  rasa-actions:
+    volumes:
+      - ./models/:/app/models
+  actions:
     image: aj-lithuania
     container_name: rasa-actions-server
+    networks: ["rasa-network"]
+    restart: always
     ports:
       - "5055:5055"
-    networks:
-      - "net1"
 
 networks:
-  net1:
-    driver: bridge
+  rasa-network: {}
