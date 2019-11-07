@@ -44,3 +44,19 @@ For debug mode, use `make run-debug`
 
 ### Run with docker-compose
 `docker-compose up -d`
+
+## Test rasa connection
+
+### Rasa api endpoint
+`http://localhost:5005/webhooks/rest/webhook`
+
+### Rasa api request body
+```
+{
+    "sender":"sender_id",
+    "message":"Hi!"
+}
+```
+
+### Test connection
+`curl -d '{"sender":"Rasa", "message":"Hi!"}' -H "Content-Type: application/json" -X POST http://localhost:5005/webhooks/rest/webhook`
