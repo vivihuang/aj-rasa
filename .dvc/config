@@ -1,4 +1,0 @@
-['remote "mylocal"']
-url = /Users/rwhuang/Documents/Projects/GovTech/models
-[core]
-remote = mylocal
