@@ -45,7 +45,7 @@ For debug mode, use `make run-debug`
 ### Build docker image for rasa actions
 Pull [aj-lithuania](https://github.com/lazurey/aj-lithuania) repo
 
-Run `docker build . -t aj-estonia` in `aj-lithuania` repo to build image for rasa actions
+Run `docker build . -t aj/estonia` in `aj-lithuania` repo to build image for rasa actions
 
 ### Run with docker-compose
 `docker-compose up -d`
