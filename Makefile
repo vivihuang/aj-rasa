@@ -5,6 +5,11 @@ help:
 	@echo "        Train a combined Rasa NLU and Core model."
 	@echo "    run-debug"
 	@echo "        Run rasa with debug mode."
+	@echo "    validate"
+	@echo "        Validate training data."
+
+validate:
+	rasa data validate
 
 train:
 	rasa train
