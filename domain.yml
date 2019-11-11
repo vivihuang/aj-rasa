@@ -1,4 +1,6 @@
 intents:
+- enter_data:
+    use_entities: []
 - greet
 - goodbye
 - mood_affirm
@@ -10,14 +12,17 @@ intents:
 - ask_howold
 - ask_restaurant
 - ask_time
+- thanks
+- search_course
+entities:
+  - cooking_category
+  - cooking_sub_category
+  - sports_category
+  - sports_sub_category
 templates:
   utter_greet:
-  - text: Hey! How are you?
-    buttons:
-    - title: great
-      payload: great
-    - title: super sad
-      payload: super sad
+  - text: Hello, how may I help you?
+  - text: Hi, welcome! how may I help you?
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
     image: https://cdn77.eatliver.com/wp-content/uploads/2017/10/trump-frog.jpg
@@ -26,16 +31,15 @@ templates:
   utter_happy:
   - text: Great carry on!
   utter_goodbye:
-  - text: Bye
+  - text: Bye, have a nice day.
   utter_ask_weather:
   - text: I don't know about where you live, but in my world it's always sunny ☀️
   - text: Honestly it's a bit too hot these days 😅
   - text: Blue skies and sunshine!
   - text: Let's just say it hasn't rained in weeks ☀️
   utter_ask_howdoing:
-  - text: I'm great! Thanks for asking.
-  - text: I'm good, thanks!
-  - text: A little bit too warm, otherwise fine.
+  - text: Quite good, thanks. is there anything I can help you?
+  - text: Hi, I'm good, thanks. How may I assist you?
   utter_ask_howold:
   - text: '42.'
   - text: Old enough to be a bot.
@@ -45,6 +49,34 @@ templates:
   - text: I'm sorry, I can’t recommend you a restaurant as I usually cook at home.
   utter_ask_time:
   - text: It's the most wonderful time of the year!
+  utter_thanks:
+  - text: Glad to serve you!
+  - text: You are welcome, we should do!
+  - text: Thank you for your support of our work, I hope that you will continue to support us in the future!
+  - text: I am very happy to help you.
+  utter_search_course:
+  - text: What kind of courses you'd like to join?
+  - text: What's the course category you want to join?
+  - text: What kind of courses you'd prefer?
+  - text: No problem, what kind of courses you'd like to participate?
+  - text: OK, what type of courses do you like?
+  - text: Sure, what kind of courses you're looking for?
+  utter_ask_cooking_sub_category:
+  - text: "What kind of Cooking & Food culture course you'd prefer? Like: Chinese food, Healthy food, Coffee, Bread."
+  utter_ask_sports_sub_category:
+  - text: "What kind of Sports & Fitness course you'd prefer? Like: Tennis, Yoga, Basketball, Swimming / Water Survival"
+  utter_course_list:
+  - text: "Here're some courses might suite you:
+          course 1
+          course 2
+          course 3"
+  utter_no_course_name:
+  - text: Sorry, the {course_name} course is not provided now. Do you have other interested courses?
+  utter_no_course:
+  - text: Sorry, the course is not provided now. Do you have other interested courses?
+  utter_anything_else:
+  - text: What else can I help you with? In order to serve you better, thank you!
+  - text: Is there anything else that can help you?
 actions:
 - utter_greet
 - utter_cheer_up
@@ -57,3 +89,12 @@ actions:
 - utter_ask_restaurant
 - utter_ask_time
 - action_chitchat
+- utter_thanks
+- utter_search_course
+- action_search_course
+- utter_ask_cooking_sub_category
+- utter_ask_sports_sub_category
+- utter_course_list
+- utter_no_course_name
+- utter_no_course
+- utter_anything_else
