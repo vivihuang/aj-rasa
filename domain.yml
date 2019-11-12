@@ -1,5 +1,5 @@
 intents:
-- enter_data:
+- enter_course_category:
     use_entities: []
 - greet
 - goodbye
@@ -13,12 +13,14 @@ intents:
 - ask_restaurant
 - ask_time
 - thanks
-- search_course
+- learn_course
+- learn_sports_course
+- learn_cooking_course
+- learn_other_course
 entities:
   - cooking_category
-  - cooking_sub_category
   - sports_category
-  - sports_sub_category
+  - other_category
 templates:
   utter_greet:
   - text: Hello, how may I help you?
@@ -54,28 +56,25 @@ templates:
   - text: You are welcome, we should do!
   - text: Thank you for your support of our work, I hope that you will continue to support us in the future!
   - text: I am very happy to help you.
-  utter_search_course:
+  utter_learn_course:
   - text: What kind of courses you'd like to join?
   - text: What's the course category you want to join?
   - text: What kind of courses you'd prefer?
   - text: No problem, what kind of courses you'd like to participate?
   - text: OK, what type of courses do you like?
   - text: Sure, what kind of courses you're looking for?
-  utter_ask_cooking_sub_category:
+  utter_ask_cooking_category:
   - text: "What kind of Cooking & Food culture course you'd prefer? Like: Chinese food, Healthy food, Coffee, Bread."
-  utter_ask_sports_sub_category:
+  utter_ask_sports_category:
   - text: "What kind of Sports & Fitness course you'd prefer? Like: Tennis, Yoga, Basketball, Swimming / Water Survival"
   utter_course_list:
-  - text: "Here're some courses might suite you:
-          course 1
-          course 2
-          course 3"
+  - text: "Here're some courses might suite you: course 1, course 2 and course 3"
   utter_no_course_name:
   - text: Sorry, the {course_name} course is not provided now. Do you have other interested courses?
   utter_no_course:
   - text: Sorry, the course is not provided now. Do you have other interested courses?
   utter_anything_else:
-  - text: What else can I help you with? In order to serve you better, thank you!
+  - text: What else can I help you with? In order to serve you better.
   - text: Is there anything else that can help you?
 actions:
 - utter_greet
@@ -90,10 +89,10 @@ actions:
 - utter_ask_time
 - action_chitchat
 - utter_thanks
-- utter_search_course
+- utter_learn_course
 - action_search_course
-- utter_ask_cooking_sub_category
-- utter_ask_sports_sub_category
+- utter_ask_cooking_category
+- utter_ask_sports_category
 - utter_course_list
 - utter_no_course_name
 - utter_no_course

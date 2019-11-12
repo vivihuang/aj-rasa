@@ -1,3 +1,7 @@
+## greet
+* greet
+  - utter_greet
+
 ## happy path               <!-- name of the story - just for debugging -->
 * greet              
   - utter_greet
@@ -37,3 +41,8 @@
   - action_chitchat
 * ask_weather OR ask_howdoing OR ask_howold OR ask_restaurant OR ask_time
   - action_chitchat
+
+## thanks
+* thanks
+  - utter_thanks
+  - utter_anything_else

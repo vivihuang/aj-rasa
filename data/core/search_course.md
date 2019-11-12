@@ -1,37 +1,69 @@
-## greet + search course by cooking category
-* greet
-  - utter_greet
-* search_course
-  - utter_search_course
-* enter_data{"cooking_category": "cooking"}
-  - utter_ask_cooking_sub_category
-* enter_data{"cooking_sub_category": "Chinese food"}
+## enter cooking category
+* learn_cooking_course
+  - utter_ask_cooking_category
+* enter_course_category{"cooking_category": "Chinese food"}
   - action_search_course
 
-## greet + search course by sport category
-* greet
-  - utter_greet
-* search_course
-  - utter_search_course
-* enter_data{"sports_category": "sports"}
-  - utter_ask_sports_sub_category
-* enter_data{"sports_sub_category": "swimming"}
+## learn course + enter cooking category
+* learn_course
+  - utter_learn_course
+* learn_cooking_course
+  - utter_ask_cooking_category
+* enter_course_category{"cooking_category": "Chinese food"}
   - action_search_course
 
-## greet + search course by sub-category
-* greet
-  - utter_greet
-* search_course
-  - utter_search_course
-* enter_data{"cooking_sub_category": "Chinese food"} OR enter_data{"sports_sub_category": "swimming"}
+## enter sports category
+* learn_sports_course
+  - utter_ask_sports_category
+* enter_course_category{"sports_category": "swimming"}
   - action_search_course
 
-## greet + say enter data outside the flows
-* greet
-  - utter_greet
-* search_course
-  - utter_search_course
-* enter_data
+## learn course + enter sports category
+* learn_course
+  - utter_learn_course
+* enter_course_category{"sports_category": "sports"}
+  - utter_ask_sports_category
+* enter_course_category{"sports_category": "swimming"}
+  - action_search_course
+
+## enter category
+* enter_course_category{"cooking_category": "Chinese food"} OR enter_course_category{"sports_category": "swimming"}
+  - action_search_course
+
+## search course + enter sub-category
+* learn_course
+  - utter_learn_course
+* enter_course_category{"cooking_category": "Chinese food"} OR enter_course_category{"sports_category": "swimming"}
+  - action_search_course
+
+## enter outside data + enter sports data
+* learn_other_course
   - utter_no_course
-* thanks
-  - utter_thanks
+* enter_course_category{"sports_category": "sports"}
+  - utter_ask_sports_category
+* enter_course_category{"sports_category": "swimming"}
+  - action_search_course
+
+## search course + enter outside data + enter cooking data
+* learn_course
+  - utter_learn_course
+* learn_other_course
+  - utter_no_course
+* enter_course_category{"cooking_category": "cooking"}
+  - utter_ask_cooking_category
+* enter_course_category{"cooking_category": "Chinese food"}
+  - action_search_course
+
+## search course + enter outside data twice
+* learn_other_course
+  - utter_no_course
+* learn_other_course
+  - utter_no_course
+
+## search course + enter outside data twice
+* learn_course
+  - utter_learn_course
+* learn_other_course
+  - utter_no_course
+* learn_other_course
+  - utter_no_course

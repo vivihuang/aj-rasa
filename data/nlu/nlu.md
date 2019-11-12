@@ -289,31 +289,40 @@
 - I got it, thanks
 - Ok, I know, thanks
 
-## intent:search_course
+## intent:learn_course
 - I want to search some courses.
 - I'd like to find a course.
 - Search course.
 - Find courses.
 - I want to learn something.
 
-## intent:enter_data
-- [Cooking & Food](cooking_category) culture.
-- I'd want some [cooking](cooking_category) courses.
-- I want to learn course about [food](cooking_category).
-- Some [food](cooking_category) culture learning please.
-- [Chinese food](cooking_sub_category)
-- I want some [healthy food](cooking_sub_category).
-- Some [Indian cooking](cooking_sub_category).
-- [Halal food](cooking_sub_category)
-- [dessert](cooking_sub_category)
-- I want to learn some [dessert](cooking_sub_category) courses
-- [Sports & Fitness](sports_category)
-- Learn some [sports](sports_category)
-- Want to participate some [fitness](sports_category) courses.
-- I'm a fan of [sports](sports_category).
-- [Swimming](sports_sub_category)
-- I like [basketball](sports_sub_category)
-- [Yoga](sports_sub_category) is ok.
-- Maybe [ping pong](sports_sub_category).
+## intent:learn_cooking_course
+- Cooking & Food culture.
+- I'd want some cooking courses.
+- I want to learn course about food.
+- I want to learn something about cooking
+- Some food culture learning please.
+
+## intent:learn_sports_course
+- Sports & Fitness
+- Learn some sports
+- Want to participate some fitness courses.
+- I'm a fan of sports.
+
+## intent:learn_other_course
 - Shopping
 - I want to learn some shopping courses.
+
+## intent:enter_course_category
+- [Chinese food](cooking_category)
+- I want some [healthy food](cooking_category).
+- Some [Indian cooking](cooking_category).
+- [Halal food](cooking_category)
+- [dessert](cooking_category)
+- [coffee](cooking_category)
+- I want to learn [coffee](cooking_category)
+- I want to learn some [dessert](cooking_category) courses
+- [Swimming](sports_category)
+- I like [basketball](sports_category)
+- [Yoga](sports_category) is ok.
+- Maybe [ping pong](sports_category).
