@@ -326,3 +326,51 @@
 - I like [basketball](sports_category)
 - [Yoga](sports_category) is ok.
 - Maybe [ping pong](sports_category).
+
+## intent:out_of_scope
+- I want pizza
+- please help with my ice cream it's dripping
+- i want a non dripping ice cream
+- show me a picture of a chicken
+- I want french cuisine
+- i am hungry
+- restaurant
+- i don't care!!!!
+- i do not care how are you
+- stop it, i do not care!!!
+- really? you're so touchy?
+- how come?
+- I changed my mind
+- what?
+- did i break you
+- that link doesn't work!
+- you already have that
+- this is a really frustrating experience
+- do you want to marry me?
+- give me food
+- i want food
+- udo, I want to marry you
+- i wanna party
+- I like you
+- silly bot
+- i want to eat
+- you are a stupid bot
+- i hate you
+- Can I ask you questions first?
+- are you vegan
+- what's your wife doing this weekend
+- how are the kids
+- you're rather dull
+- tell me a joke
+- can we keep chatting?
+- talk to me
+- i will tame a mouse for you
+- go back
+- sorry, i cannot rephrase
+- lol
+- you are annoying
+- i want more of you in my life!
+- i dont like bots
+ - do you have a phone number?
+- where do you live?
+- Why don’t you answer?

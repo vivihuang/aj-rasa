@@ -46,3 +46,15 @@
 * thanks
   - utter_thanks
   - utter_anything_else
+
+## out of scope
+* out_of_scope
+  - utter_out_of_scope
+  - utter_possibilities
+
+## out of scope + out of scope
+* out_of_scope
+  - utter_out_of_scope
+  - utter_possibilities
+* out_of_scope
+  - utter_help_desk

@@ -17,6 +17,7 @@ intents:
 - learn_sports_course
 - learn_cooking_course
 - learn_other_course
+- out_of_scope
 entities:
   - cooking_category
   - sports_category
@@ -76,6 +77,15 @@ templates:
   utter_anything_else:
   - text: What else can I help you with? In order to serve you better.
   - text: Is there anything else that can help you?
+  utter_out_of_scope:
+  - text: Sorry, I can’t deal with that request.
+  - text: I'm sorry, I can't handle that request.
+  - text: I can't help you with that, I'm sorry.
+  utter_possibilities:
+  - text: Are you trying to find a course?
+  - text: I guess maybe you are trying to find a course.
+  utter_help_desk:
+  - text: Sorry, I do not have an answer to your question. Please contact onePA Helpdesk at 63456163 or email helpdesk@onepa.sg.
 actions:
 - utter_greet
 - utter_cheer_up
@@ -97,3 +107,6 @@ actions:
 - utter_no_course_name
 - utter_no_course
 - utter_anything_else
+- utter_out_of_scope
+- utter_possibilities
+- utter_help_desk
