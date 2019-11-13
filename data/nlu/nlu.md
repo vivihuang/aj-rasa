@@ -319,13 +319,18 @@
 - Some [Indian cooking](cooking_category).
 - [Halal food](cooking_category)
 - [dessert](cooking_category)
-- [coffee](cooking_category)
+- [Coffee](cooking_category)
 - I want to learn [coffee](cooking_category)
+- I want to learn how to cook [Thai food](cooking_category)
+- Do you have any [coffee](cooking_category) courses
 - I want to learn some [dessert](cooking_category) courses
+- [Tennis](sports_category) course
 - [Swimming](sports_category)
 - I like [basketball](sports_category)
 - [Yoga](sports_category) is ok.
 - Maybe [ping pong](sports_category).
+- Can you teach me [yoga](sports_category)
+- Is there any [dessert](cooking_category) course available
 
 ## intent:out_of_scope
 - I want pizza
