@@ -69,7 +69,9 @@ templates:
   utter_ask_sports_category:
   - text: "What kind of Sports & Fitness course you'd prefer? Like: Tennis, Yoga, Basketball, Swimming / Water Survival"
   utter_course_list:
-  - text: "Here're some {course_name} courses might suite you: course 1, course 2 and course 3"
+  - text: "Here're some {course_name} courses might suite you: course 1, course 2 and course 3."
+  utter_course_list_with_link:
+    - text: "Here're some {course_name} courses might suite you, please click the following link to see the detail: {link}."
   utter_no_course_name:
   - text: Sorry, the {course_name} course is not provided now. Do you have other interested courses?
   utter_no_course:
@@ -113,3 +115,4 @@ actions:
 - utter_possibilities
 - utter_help_desk
 - utter_server_wrong
+- utter_course_list_with_link
