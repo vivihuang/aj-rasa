@@ -1,7 +1,7 @@
 version: '3'
 services:
   rasa:
-    image: 'aj-estonia:latest'
+    image: 'aj/estonia:latest'
     container_name: rasa-server
     networks:
       - rasa-network
@@ -13,7 +13,7 @@ services:
     volumes:
       - ./models/:/app/models
   actions:
-    image: 'aj-lithuania:latest'
+    image: 'aj/lithuania:latest'
     container_name: rasa-actions-server
     networks:
       - rasa-network
@@ -23,13 +23,13 @@ services:
     environment:
       - BACKEND_API=backend
   backend:
-    image: 'aj-latvia:latest'
+    image: 'aj/latvia:latest'
     container_name: backend-service
     networks:
       - rasa-network
     restart: always
     ports:
-      - '8080:8080'
+      - '8088:8080'
     environment:
       - SPRING_PROFILES_ACTIVE=prod
   mongo:
@@ -48,5 +48,3 @@ services:
 
 networks:
   rasa-network: {}
-volumes:
-  rasa-db: null
