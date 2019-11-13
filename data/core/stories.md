@@ -56,5 +56,5 @@
 * out_of_scope
   - utter_out_of_scope
   - utter_possibilities
-* out_of_scope
-  - utter_help_desk
+* out_of_scope OR mood_deny
+  - utter_default

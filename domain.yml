@@ -86,7 +86,7 @@ templates:
   utter_possibilities:
   - text: Are you trying to find a course?
   - text: I guess maybe you are trying to find a course.
-  utter_help_desk:
+  utter_default:
   - text: Sorry, I do not have an answer to your question. Please contact onePA Helpdesk at 63456163 or email helpdesk@onepa.sg.
   utter_server_wrong:
   - text: Sorry, something is wrong with the server now. Please try again.
@@ -113,6 +113,6 @@ actions:
 - utter_anything_else
 - utter_out_of_scope
 - utter_possibilities
-- utter_help_desk
+- utter_default
 - utter_server_wrong
 - utter_course_list_with_link

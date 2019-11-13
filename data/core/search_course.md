@@ -75,3 +75,10 @@
   - utter_no_course
 * learn_other_course
   - utter_no_course
+
+## out of scope + affirm
+* out_of_scope
+  - utter_out_of_scope
+  - utter_possibilities
+* mood_affirm
+  - utter_learn_course
