@@ -123,3 +123,5 @@ travis_gcloud_auth.json
 *.iml
 
 rasa-db
+
+.DS_Store
