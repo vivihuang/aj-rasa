@@ -80,12 +80,10 @@ templates:
   - text: What else can I help you with? In order to serve you better.
   - text: Is there anything else that can help you?
   utter_out_of_scope:
-  - text: Sorry, I can’t deal with that request.
-  - text: I'm sorry, I can't handle that request.
-  - text: I can't help you with that, I'm sorry.
+  - text: Sorry, I can not help you in this question.
+  - text: Sorry, I can't handle that request.
   utter_possibilities:
-  - text: Are you trying to find a course?
-  - text: I guess maybe you are trying to find a course.
+  - text: May I help you with another question, please ask me!
   utter_default:
   - text: Sorry, I do not have an answer to your question. Please contact onePA Helpdesk at 63456163 or email helpdesk@onepa.sg.
   utter_server_wrong:
