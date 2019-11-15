@@ -95,10 +95,8 @@ actions:
 - utter_ask_howdoing
 - utter_ask_howold
 - utter_ask_time
-- action_chitchat
 - utter_thanks
 - utter_learn_course
-- action_search_course
 - utter_ask_cooking_category
 - utter_ask_sports_category
 - utter_course_list
@@ -110,3 +108,7 @@ actions:
 - utter_default
 - utter_server_wrong
 - utter_course_list_with_link
+- action_chitchat
+- action_search_course
+- action_default_fallback
+- action_default_ask_affirmation
