@@ -10,7 +10,6 @@ intents:
 - ask_weather
 - ask_howdoing
 - ask_howold
-- ask_restaurant
 - ask_time
 - thanks
 - learn_course
@@ -48,8 +47,6 @@ templates:
   - text: Old enough to be a bot.
   - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t
       matter.
-  utter_ask_restaurant:
-  - text: I'm sorry, I can’t recommend you a restaurant as I usually cook at home.
   utter_ask_time:
   - text: It's the most wonderful time of the year!
   utter_thanks:
@@ -97,7 +94,6 @@ actions:
 - utter_ask_weather
 - utter_ask_howdoing
 - utter_ask_howold
-- utter_ask_restaurant
 - utter_ask_time
 - action_chitchat
 - utter_thanks

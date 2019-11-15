@@ -31,15 +31,15 @@
   - utter_goodbye
 
 ## chitchat
-* ask_weather OR ask_howdoing OR ask_howold OR ask_restaurant OR ask_time
+* ask_weather OR ask_howdoing OR ask_howold OR ask_time
   - action_chitchat
 
 ## more chitchat
 * greet
   - utter_greet
-* ask_weather OR ask_howdoing OR ask_howold OR ask_restaurant OR ask_time
+* ask_weather OR ask_howdoing OR ask_howold OR ask_time
   - action_chitchat
-* ask_weather OR ask_howdoing OR ask_howold OR ask_restaurant OR ask_time
+* ask_weather OR ask_howdoing OR ask_howold OR ask_time
   - action_chitchat
 
 ## thanks
