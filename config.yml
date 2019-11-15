@@ -4,8 +4,7 @@ policies:
 - epochs: 300
   max_history: 5
   name: KerasPolicy
-- fallback_action_name: action_default_fallback
-  name: FallbackPolicy
+- name: TwoStageFallbackPolicy
   nlu_threshold: 0.6
   core_threshold: 0.3
 - max_history: 5
