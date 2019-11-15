@@ -302,16 +302,24 @@
 - I want to learn course about food.
 - I want to learn something about cooking
 - Some food culture learning please.
+- Maybe cooking
+- I want to try cooking
+- Please tell me how to cooking
 
 ## intent:learn_sports_course
 - Sports & Fitness
 - Learn some sports
 - Want to participate some fitness courses.
 - I'm a fan of sports.
+- Maybe sports
+- Can you teach me sports
+- I want to try some fitness
+- I want to know how to become fit
 
 ## intent:learn_other_course
 - Shopping
 - I want to learn some shopping courses.
+- I want to know how to shopping
 
 ## intent:enter_course_category
 - [Chinese food](cooking_category)
