@@ -1,5 +1,14 @@
 language: en
-pipeline: supervised_embeddings
+pipeline:
+- name: "SpacyNLP"
+  model: "en_trf_distilbertbaseuncased_lg"
+- name: "SpacyTokenizer"
+- name: "SpacyFeaturizer"
+- name: "RegexFeaturizer"
+- name: "CRFEntityExtractor"
+- name: "EntitySynonymMapper"
+- name: "SklearnIntentClassifier"
+
 policies:
 - epochs: 300
   max_history: 5
