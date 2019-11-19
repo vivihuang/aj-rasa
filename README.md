@@ -29,6 +29,19 @@ use `source venv/bin/activate` to enable venv
 #### Check db exists
 `mongo -u rasauser -p rasapwd --authenticationDatabase rasa`
 
+### Load spaCy models for using spaCy pipeline
+
+#### Load default **en_core_web_md** model
+```
+python -m spacy download en_core_web_md
+python -m spacy link en_core_web_md en
+```
+
+#### Load **en_trf_distilbertbaseuncased_lg** model
+```
+python -m spacy download en_trf_distilbertbaseuncased_lg
+```
+
 ### Train models
 `make train`
 
