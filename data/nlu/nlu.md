@@ -301,3 +301,11 @@
 - Maybe [ping pong](sports_category).
 - Can you teach me [yoga](sports_category)
 - Is there any [dessert](cooking_category) course available
+
+## intent:test_button
+- test button
+- Test button
+- test buttons
+- Test buttons
+- button!!!
+- Buttons

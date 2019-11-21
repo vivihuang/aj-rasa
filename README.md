@@ -53,7 +53,7 @@ For debug mode, use `make run-debug`
 ## Steps to Setup Rasa with Docker
 
 ### Build docker image
-`docker build . -t aj-estonia`
+`docker build . -t aj/estonia`
 
 ### Build docker image for rasa actions
 Pull [aj-lithuania](https://github.com/lazurey/aj-lithuania) repo

@@ -16,6 +16,9 @@ validate:
 train:
 	rasa train
 
+version:
+	rasa --version
+
 run:
 	rasa run --enable-api --endpoints endpoints.yml
 
