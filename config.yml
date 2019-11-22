@@ -1,11 +1,20 @@
-language: en
-pipeline: pretrained_embeddings_spacy
+language: en_core_web_md
+
+pipeline:
+- name: "SpacyNLP"
+- name: "SpacyTokenizer"
+- name: "SpacyFeaturizer"
+- name: "RegexFeaturizer"
+- name: "SpacyEntityExtractor"
+- name: "CRFEntityExtractor"
+- name: "SklearnIntentClassifier"
+
 policies:
 - epochs: 300
   max_history: 5
   name: KerasPolicy
 - name: TwoStageFallbackPolicy
-  nlu_threshold: 0.6
+  nlu_threshold: 0.3
   core_threshold: 0.3
 - max_history: 5
   name: MemoizationPolicy
